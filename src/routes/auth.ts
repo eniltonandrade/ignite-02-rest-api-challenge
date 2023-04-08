@@ -35,7 +35,11 @@ export async function authRoutes(app: FastifyInstance) {
       password: z.string(),
     })
 
-    reply.clearCookie('userId')
+    const { userId } = request.cookies
+
+    if (userId) {
+      reply.clearCookie('userId')
+    }
 
     const { email, password } = createMealBodySchema.parse(request.body)
 
