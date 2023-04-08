@@ -1,23 +1,27 @@
-# REQUISITOS DO DESAFIO
+# CHALLENGE REQUIREMENTS
 
-- [x] Deve ser possível criar um usuário
-- [x] Deve ser possível identificar o usuário entre as requisições
-- [x] Deve ser possível registrar uma refeição feita, com as seguintes informações:
+- [x] Should be able to create a user
+- [x] Should be able to identify the user in the requests
+- [x] Should be abble to register a meal with the following information
     
-    *As refeições devem ser relacionadas a um usuário.*
+    *The meals should be related to a suer.*
     
-    - Nome
-    - Descrição
-    - Data e Hora
-    - Está dentro ou não da dieta
+    - Name
+    - Description
+    - Date and Time
+    - Is it in the diet or not
 
-- [x] Deve ser possível editar uma refeição, podendo alterar todos os dados acima
-- [x] Deve ser possível apagar uma refeição
-- [x] Deve ser possível listar todas as refeições de um usuário
-- [x] Deve ser possível visualizar uma única refeição
-- [ ] Deve ser possível recuperar as métricas de um usuário
-    - [x] Quantidade total de refeições registradas
-    - [x] Quantidade total de refeições dentro da dieta
-    - [x] Quantidade total de refeições fora da dieta
-    - [x] Melhor sequência por dia de refeições dentro da dieta
-- [x] O usuário só pode visualizar, editar e apagar as refeições o qual ele criou
+- [x] Should be able to edit a meal
+- [x] Should be able to delete a meal
+- [x] Should be able to list the meals related to a user
+- [x] Should be able to view a unique transaction 
+- [x] Should be able to retrieve metrics about user's meal
+    - [x] Quantity of meals registered
+    - [x] Quantity of meals inside the diet
+    - [x] Quantituy of meals outside the diet
+    - [x] Best sequence of days inside the diet
+- [x] The user can only view, edit and delete the emails created by him/her
+
+# THE EXTRA MILE
+
+- [x] - Create Tests to each of the requirements descibed above
