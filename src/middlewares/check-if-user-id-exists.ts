@@ -6,12 +6,14 @@ export async function CheckUserIdExists(
   reply: FastifyReply,
 ) {
   const userIdFromCookie = request.cookies.userId
-
-  const user = await knex('users')
-    .where({
-      id: userIdFromCookie,
-    })
-    .first()
+  let user: string = ''
+  if (userIdFromCookie) {
+    user = await knex('users')
+      .where({
+        id: userIdFromCookie,
+      })
+      .first()
+  }
 
   if (!user) {
     return reply.status(401).send({
